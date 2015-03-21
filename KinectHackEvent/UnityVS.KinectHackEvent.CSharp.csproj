@@ -52,9 +52,6 @@
     <Reference Include="UnityEngine.UI">
       <HintPath>Library\UnityAssemblies\UnityEngine.UI.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.UI">
-      <HintPath>Library\UnityAssemblies\UnityEngine.UI.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="UnityVS.KinectHackEvent.CSharp.Plugins.csproj">
@@ -65,6 +62,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\BodySourceManager.cs" />
     <Compile Include="Assets\Scripts\BodySourceView.cs" />
+    <Compile Include="Assets\Scripts\CameraUpdate.cs" />
     <Compile Include="Assets\Scripts\ColorSourceManager.cs" />
     <Compile Include="Assets\Scripts\ColorSourceView.cs" />
     <Compile Include="Assets\Scripts\DepthSourceManager.cs" />
