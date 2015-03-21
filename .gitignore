@@ -1,33 +1,31 @@
 # =============== #
 # Unity generated #
 # =============== #
-KinectHackEvent/Temp/*
-KinectHackEvent\Library\*
+Temp/
+Library/
 
 # ===================================== #
 # Visual Studio / MonoDevelop generated #
 # ===================================== #
-KinectHackEvent/ExportedObj/
-KinectHackEvent/obj/
-KinectHackEvent/*.svd
-KinectHackEvent/*.userprefs
-KinectHackEvent//*.csproj
-KinectHackEvent/*.pidb
-KinectHackEvent/*.suo
-KinectHackEvent//*.sln
-KinectHackEvent/*.user
-KinectHackEvent/*.unityproj
-KinectHackEvent/*.booproj
+ExportedObj/
+obj/
+*.svd
+*.userprefs
+/*.csproj
+*.pidb
+*.suo
+/*.sln
+*.user
+*.unityproj
+*.booproj
 
 # ============ #
 # OS generated #
 # ============ #
-KinectHackEvent/.DS_Store
-KinectHackEvent/.DS_Store?
-KinectHackEvent/._*
-KinectHackEvent/.Spotlight-V100
-KinectHackEvent/.Trashes
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
 ehthumbs.db
 Thumbs.db
-KinectHackEvent/Library/
-KinectHackEvent/Assets/UnityVS/
