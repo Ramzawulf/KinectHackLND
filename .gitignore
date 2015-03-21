@@ -29,8 +29,5 @@ KinectHackEvent/.Spotlight-V100
 KinectHackEvent/.Trashes
 ehthumbs.db
 Thumbs.db
-KinectHackEvent/Assets/UnityVS/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll.meta
-*.meta
-KinectHackEvent/Library/metadata/00/00000000000000002000000000000000
-*.dwlt
-KinectHackEvent/Assets/UnityVS/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll.meta
+KinectHackEvent/Library/
+KinectHackEvent/Assets/UnityVS/
