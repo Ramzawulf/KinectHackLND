@@ -1,0 +1,31 @@
+# =============== #
+# Unity generated #
+# =============== #
+KinectHackEvent/Temp/
+KinectHackEvent/Library/
+
+# ===================================== #
+# Visual Studio / MonoDevelop generated #
+# ===================================== #
+KinectHackEvent/ExportedObj/
+KinectHackEvent/obj/
+KinectHackEvent/*.svd
+KinectHackEvent/*.userprefs
+KinectHackEvent//*.csproj
+KinectHackEvent/*.pidb
+KinectHackEvent/*.suo
+KinectHackEvent//*.sln
+KinectHackEvent/*.user
+KinectHackEvent/*.unityproj
+KinectHackEvent/*.booproj
+
+# ============ #
+# OS generated #
+# ============ #
+KinectHackEvent/.DS_Store
+KinectHackEvent/.DS_Store?
+KinectHackEvent/._*
+KinectHackEvent/.Spotlight-V100
+KinectHackEvent/.Trashes
+ehthumbs.db
+Thumbs.db
