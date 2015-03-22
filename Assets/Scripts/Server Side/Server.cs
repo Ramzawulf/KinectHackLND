@@ -1,6 +1,8 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
+using System;
 using System.Collections;
+using System.Collections.Generic;
 
 public class Server : MonoBehaviour {
 
@@ -10,12 +12,15 @@ public class Server : MonoBehaviour {
     public Text statusLabel;
     public Text ipField;
     public InputField iField;
-	// Use this for initialization
+
+    public Transform PlayerOnePrefab;
+    public Transform PlayerTwoPrefab;
+    public List<TestCube> PlayerList;
+
 	void Start () {
-        
+        PlayerList = new List<TestCube>();
 	}
-	
-	// Update is called once per frame
+
 	void Update () {
         if (Network.peerType == NetworkPeerType.Disconnected) {
             statusLabel.text = "Disconnected";
@@ -58,5 +63,20 @@ public class Server : MonoBehaviour {
         }
 
         Network.Connect(connectionIP, port);
+    }
+
+    public void OnServerInitialized()
+    {
+        Debug.Log("server started");
+    }
+
+    void OnPlayerConnected(NetworkPlayer player)
+    {
+        SpawnPlayer(player);
+    }
+
+    void SpawnPlayer(NetworkPlayer player) {
+        int playerNumber = Convert.ToInt32(player.ToString());
+        Transform newPlayerTransform = (Transform)Network.Instantiate(PlayerOnePrefab, transform.position, transform.rotation, playerNumber);
     }
 }
