@@ -16,18 +16,8 @@ Platform assembly: C:\Users\Demo\Desktop\KinectHackLND\Server_Data\Managed\Unity
 Loading C:\Users\Demo\Desktop\KinectHackLND\Server_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
 Platform assembly: C:\Users\Demo\Desktop\KinectHackLND\Server_Data\Managed\ICSharpCode.SharpZipLib.dll (this message is harmless)
 Loading C:\Users\Demo\Desktop\KinectHackLND\Server_Data\Managed\ICSharpCode.SharpZipLib.dll into Unity Child Domain
-- Completed reload, in  0.081 seconds
+- Completed reload, in  0.083 seconds
 desktop: 1600x900 60Hz; virtual: 2000x1125 at 0,0
 <RI> Initializing input.
 XInput1_3.dll not found.
 <RI> Input initialized.
-<RI> Initialized touch support.
-Platform assembly: C:\Users\Demo\Desktop\KinectHackLND\Server_Data\Managed\System.Core.dll (this message is harmless)
-Platform assembly: C:\Users\Demo\Desktop\KinectHackLND\Server_Data\Managed\System.dll (this message is harmless)
-Setting up 2 worker threads for Enlighten.
-  Thread -> id: 3670 -> priority: 1 
-  Thread -> id: 34dc -> priority: 1 
-server started
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-

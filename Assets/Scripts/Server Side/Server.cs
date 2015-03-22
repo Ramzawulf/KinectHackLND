@@ -72,7 +72,7 @@ public class Server : MonoBehaviour {
 
     void OnPlayerConnected(NetworkPlayer player)
     {
-        SpawnPlayer(player);
+        //SpawnPlayer(player);
     }
 
     void SpawnPlayer(NetworkPlayer player) {
