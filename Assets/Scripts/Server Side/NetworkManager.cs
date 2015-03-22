@@ -15,17 +15,21 @@ public class NetworkManager : MonoBehaviour {
     public string connectionIP;
     public Text statusLabel;
     public Text ipField;
+	public Text numPlayers;
     public InputField iField;
+
+	public GameObject pillar;
 
     public Transform PlayerOnePrefab;
     public Transform PlayerTwoPrefab;
 	public KinectManager knctManagerPrefab;
 	public Transform P1SpawnPoint;
 	public Transform P2SpawnPoint;
-	private List<GameObject> players;
+	private bool isP1Spawned = false;
+
 
 	void Awake(){
-		players = new List<GameObject> ();
+
 	}
 
 	void Update () {
@@ -39,12 +43,12 @@ public class NetworkManager : MonoBehaviour {
 	
 	private void SpawnPlayer()
 	{
-		if (players.Count == 0) {
-			//Spawn P1
-			players.Add (Network.Instantiate (PlayerOnePrefab, P1SpawnPoint.position, Quaternion.identity, 0) as GameObject);
-				Network.Instantiate(knctManagerPrefab, new Vector3(0,0,0), Quaternion.identity, 99);
-		} else if (players.Count == 1) {
-			players.Add (Network.Instantiate (PlayerOnePrefab, P2SpawnPoint.position, Quaternion.identity, 0) as GameObject);
+		if (Network.connections.Length <= 1) {
+			Network.Instantiate (PlayerOnePrefab, new Vector3(UnityEngine.Random.Range(-15f, 15f), 0 ,UnityEngine.Random.Range(-1.5f,1.5f)), Quaternion.identity, 0);
+			Network.Instantiate(knctManagerPrefab, new Vector3(15f,1.5f,0), Quaternion.identity, 99);
+		} else {
+			Network.Instantiate (PlayerOnePrefab, new Vector3(UnityEngine.Random.Range(-15f, 15f), 0 ,UnityEngine.Random.Range(-1.5f,1.5f)), Quaternion.identity, 0);
+			pillar.transform.position = new Vector3(100,100,100);
 		}
 	}
 
@@ -86,5 +90,7 @@ public class NetworkManager : MonoBehaviour {
 			
 			statusLabel.text = "Connected as server";
 		}
+
+		numPlayers.text = Network.connections.Length.ToString();
 	}
 }

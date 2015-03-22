@@ -283,7 +283,7 @@ public class AvatarController : MonoBehaviour
 
 			if(offsetRelativeToSensor)
 			{
-				Vector3 cameraPos = Camera.main.transform.position;
+				Vector3 cameraPos = new Vector3(0,0,0);// Camera.main.transform.position;
 
 				float yRelToAvatar = (offsetNode != null ? offsetNode.transform.position.y : transform.position.y) - cameraPos.y;
 				Vector3 relativePos = new Vector3(trans.x * moveRate, yRelToAvatar, trans.z * moveRate);
